@@ -12,9 +12,9 @@
 	</install>
 	<hooks>
 		<hook id="hd_head"><![CDATA[
-if ((FORUM_PAGE == 'viewtopic') || in_array(FORUM_PAGE, array('post', 'postedit')))
+if (in_array(FORUM_PAGE, array('viewtopic', 'post', 'postedit')))
 {
-    $forum_head['style_pun_extended_bbcode'] = '<link rel="stylesheet" type="text/css" media="screen" href="'.$ext_info['url'].'/styles.css" />';
+    $forum_head['bbcode_spoiler_css'] = '<link rel="stylesheet" type="text/css" media="screen" href="'.$ext_info['url'].'/styles.css" />';
 }
 		]]></hook>
 
